@@ -2,6 +2,8 @@
 This contains 2 main elements, the Job Worker which represents custom microserivces and a BPMN model which orchestrates those services.
 This is a nice example to see how you might connect up a Java application to Camunda 8. 
 
+![.img](img/process-five.png)
+
 ## Setting you Camunda 8 Cluster
 The fastest way to do it is to use the free trail of Camunda 8 SaaS. To start one you can [go here](https://bit.ly/3wzLViG) and register for an account. From there setting up a cluster just requires you to click the `Create Cluster` button
 
