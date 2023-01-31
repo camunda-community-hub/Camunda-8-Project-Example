@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_08ave6i" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Web Modeler" exporterVersion="c01dd0d" camunda:diagramRelationId="9fcf0f55-3822-4f29-b803-b4e80ff64431" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0">
+  <decision id="Decide_on_Assignee" name="Decide on Assignee">
+    <decisionTable id="DecisionTable_0352s1p" hitPolicy="FIRST">
+      <input id="Input_1" label="Complexity">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>complexity</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1by0tnn">
+          <text>"High","Medium","Low"</text>
+        </inputValues>
+      </input>
+      <output id="Output_1" label="Assignee" name="processOwner" typeRef="string" />
+      <output id="OutputClause_13wrpdp" label="User Needed" name="needsUser" typeRef="boolean" />
+      <rule id="DecisionRule_0yefgm3">
+        <inputEntry id="UnaryTests_0c5o8je">
+          <text>"High"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0e2cn7x">
+          <text>"niall.deehan@camunda.com"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1ayb9r8">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0h7m5ki">
+        <inputEntry id="UnaryTests_0llx3m2">
+          <text>"Low"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00p14o5">
+          <text>"niall.deehan@camunda.com"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1usj8ai">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0nax7ky">
+        <inputEntry id="UnaryTests_126d2pd">
+          <text>"Medium"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1f6yveg">
+          <text>"niall.deehan@camunda.com"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1u8l2vz">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decide_on_Assignee">
+        <dc:Bounds height="80" width="180" x="160" y="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
