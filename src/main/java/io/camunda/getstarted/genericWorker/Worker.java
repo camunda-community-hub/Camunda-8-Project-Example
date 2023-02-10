@@ -24,10 +24,11 @@ public class Worker {
 
     @JobWorker(type = "DoWork")
     public void DoWork(final JobClient client, final ActivatedJob job) {
+        
+
 
         Map<String, Object> variablesAsMap = job.getVariablesAsMap();
         Boolean throwError = (Boolean) variablesAsMap.get("throwError");
-
         
         try {
             System.out.println("Lets find out if i can throw an error "+ throwError);
