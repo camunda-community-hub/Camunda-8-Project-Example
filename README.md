@@ -1,4 +1,7 @@
 # Camunda 8 Code Example
+
+> **🚀 Looking for the latest and greatest?** We highly recommend checking out our [**official Camunda 8 Get Started guide**](https://github.com/camunda/camunda-8-get-started) first! It's actively maintained and includes up-to-date service worker examples for **both Java and Node.js**. You'll get the most current best practices and patterns there. This repository remains available as an additional reference, but the official guide is where we recommend everyone starts! 💡
+
 This contains 2 main elements, the Job Worker which represents custom microserivces and a BPMN model which orchestrates those services.
 This is a nice example to see how you might connect up a Java application to Camunda 8. 
 
